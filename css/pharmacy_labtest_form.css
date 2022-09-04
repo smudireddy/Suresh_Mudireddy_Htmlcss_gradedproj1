@@ -1,0 +1,66 @@
+#lab-test-form-container {
+   
+    width:  800px;
+    height: 400px;
+    border: 2px solid black;
+    margin: auto;
+    padding: 20px 50px;
+    overflow-y: scroll;
+}
+
+#lab-test-form-grid {
+    width: 100%;
+    height: 90%;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    padding: 0px 10px;
+    overflow-y: scroll;
+    border: none;
+    box-shadow: 5px 10px 18px gray;
+}
+
+#lab-test-form-grid img {
+    width: 100%;
+    padding: 0;
+    background-color: red;
+}
+
+#form-button-container {
+   width: 20%;
+   height: 40px;
+   margin: auto;
+   padding-top: 20px;
+}
+
+#form-button-container button {
+   background-color: brown;
+   border-radius: 5px;
+   border: none;
+   color: white;
+   padding: 5px 10px;
+}
+
+#contact-details-container, #adress-details-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 10px;
+}
+
+.input-container{
+    padding: 0;
+    margin: 0;
+}
+
+.input-container label {
+    color: gray;
+}
+
+.input-container input {
+    border:0;
+    border-bottom:1px solid gray;
+    display: block;
+    min-width: 80%;
+}
+
+
