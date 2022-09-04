@@ -4,12 +4,11 @@ body {
 }
 
 #header {
-    height: 100px;
+    height: 80px;
     background-color: dimgray;
-    text-align: right;
+    text-align: center;
     font-size: 40px;
-    line-height: 100px;
-    padding-right: 100px;
+    line-height: 80px;
     color: white;
     font-weight: bold;
 }
