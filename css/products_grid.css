@@ -73,3 +73,13 @@
     border: 1px blue solid;
     background-color: #ccddff;
 }
+
+.product:hover {
+    transform: scale(1.2);
+}
+
+.product button:active
+{
+    border:0.2em solid rgb(0, 255, 76);
+    background-color:rgb(250, 234, 230);
+}

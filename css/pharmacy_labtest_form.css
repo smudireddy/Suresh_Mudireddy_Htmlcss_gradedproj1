@@ -1,3 +1,19 @@
+body {
+    margin: 0px;
+}
+
+#header {
+    height: 80px;
+    background-color: dimgray;
+    text-align: center;
+    font-size: 40px;
+    line-height: 80px;
+    color: white;
+    font-weight: bold;
+    letter-spacing:2px;
+    margin: 0px 0px 50px 0px;
+}
+
 #lab-test-form-container {
    
     width:  800px;
@@ -44,7 +60,7 @@
    display: grid;
    grid-template-columns: 1fr 1fr;
    column-gap: 10%;
-   margin-left: 20%;
+   margin-left: 15%;
 }
 
 #form-button-container button {
