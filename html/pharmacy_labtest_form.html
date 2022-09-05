@@ -12,13 +12,13 @@
     <div id="lab-test-form-container">
         <div id="lab-test-form-grid">
             <div id="lab-test-form">
-                <form action="">
+                <form action="" id="labtestform">
 
                     <h3>1. Your Contact Details</h3>
                     <div id="contact-details-container">
                         <div class="input-container"> 
                             <label for="fullName">Full Name</label>
-                            <input type="text" id="fullName" name="fullName">
+                            <input type="text" id="fullName" name="fullName" required>
                         </div>
                         <div class="input-container"> 
                             <label for="patientID">Patient Id if exists</label>
@@ -26,11 +26,11 @@
                         </div>
                         <div class="input-container"> 
                             <label for="contactNumber">Contact Number</label>
-                            <input type="text" id="contactNumber" name="contactNumber">
+                            <input type="tel" id="contactNumber" name="contactNumber" required>
                         </div>
                         <div class="input-container"> 
                             <label for="emailId">Email Id</label>
-                            <input type="text" id="emailId" name="emailId">
+                            <input type="email" id="emailId" name="emailId" required>
                         </div>
                     </div>
                     <h3>2. Address</h3>
@@ -46,15 +46,12 @@
                         </div>
                         <div class="input-container"> 
                             <label for="area">Area</label>
-                            <input type="text" id="area" name="area">
+                            <input type="text" id="area" name="area" required>
                         </div>
+                        <h2></h2>
                         <div class="input-container"> 
                             <label for="district">District</label>
-                            <input type="text" id="district" name="district">
-                        </div>
-                        <div class="input-container"> 
-                            <label for="district">District</label>
-                            <select id="district" name="district">
+                            <select id="district" name="district" required>
 
                                 <option value="">Choose</option>
                                 <option value="Bangalore">Bangalore</option>
@@ -64,11 +61,12 @@
                                 <option value="Coorg">Coorg</option>
                             </select>
                         </div>
+                        <br>
                     </div>
                     <h3>3. Lab Test</h3>
                     <div id="test-details-container">
                         <div class="input-container"> 
-                            <p>Check atleast one box without fail.</p>
+                            <p style="color:red;">Check atleast one box without fail.</p>
                             <input type="checkbox" id="cbc" name="cbc" value="cbc">
                             <label for="vehicle1">CBC</label>
                             <br>
@@ -100,24 +98,22 @@
                             <p><b>Select Your Comfortable Date and Time</b></p>
                             
                             <label for="testDate">Date</label>
-                            <input type="date" id="testDate" name="testDate" value="testDate">
+                            <input type="date" id="testDate" name="testDate" value="testDate" required>
                             <br>
                             
                             <label for="testTime">Time</label>
                             <input type="time" id="testTime" name="testTime" value="testTime">
                             <br>
-
                         </div>
                     </div>
                 </form>
             </div>
             <img src="../Images/Lab-Test/lab-test.jpg">
-            </div>
+        </div>
         <div id="form-button-container">
-            <button>Reset</button>
-            <button>Submit</button>
+            <button type="reset" form="labtestform">Reset</button>
+            <button type="submit" form="labtestform">Submit</button>
         </div>
     </div>
-
 </body>
 </html>
