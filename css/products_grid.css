@@ -4,8 +4,9 @@
     border: 2px solid black;
     padding-top: 0;
     padding-left: 20px;
-    width: max-content;
+    width: 80%;
     margin: 50px auto;
+    overflow: none;
 }
 
 #pharmacy-products h2 {
@@ -15,17 +16,17 @@
 .products-grid-container {
     display: grid;
     grid-template-columns: auto;
-    gap: 1rem;
+    column-gap: 20px;
     padding: 5px;
     justify-content: space-evenly;
 }
 
 #products-grid {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    gap: 1rem;
+    display: flex;
+    flex-flow: row wrap;
     padding: 5px;
     justify-content: space-evenly;
+    align-items: flex-start;
 }
 
 .product{
@@ -38,6 +39,8 @@
     text-align: left;
     justify-self: center;
     align-self: center;
+    margin: 10px;
+    padding-bottom: 10px;
 }
 
 .product h4 {
@@ -75,7 +78,7 @@
 }
 
 .product:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .product button:active
